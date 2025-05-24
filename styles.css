@@ -1,0 +1,179 @@
+:root {
+    --tg-theme-bg-color: #ffffff;
+    --tg-theme-text-color: #000000;
+    --tg-theme-hint-color: #999999;
+    --tg-theme-link-color: #2481cc;
+    --tg-theme-button-color: #2481cc;
+    --tg-theme-button-text-color: #ffffff;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 16px;
+    background-color: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.recording-section {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.record-button {
+    background-color: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.record-button:hover {
+    opacity: 0.9;
+}
+
+.record-button.recording {
+    background-color: #e74c3c;
+}
+
+.recording-status {
+    margin-top: 8px;
+    color: var(--tg-theme-hint-color);
+}
+
+.recordings-list {
+    margin: 24px 0;
+}
+
+.recording-item {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.recording-item audio {
+    width: 100%;
+    margin: 8px 0;
+}
+
+.tag-selector {
+    margin: 16px 0;
+}
+
+.tag-selector select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--tg-theme-hint-color);
+    background-color: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
+}
+
+.combine-button {
+    width: 100%;
+    background-color: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.combine-button:not(:disabled) {
+    opacity: 1;
+}
+
+.combine-button:not(:disabled):hover {
+    opacity: 0.9;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 24px 0 16px;
+}
+
+.settings-panel {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.recording-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.primary-button {
+    background-color: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+}
+
+.secondary-button {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--tg-theme-text-color);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.recording-item .tag {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+#recordingStatus {
+    color: #ff4444;
+    font-weight: 500;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 8px 0;
+}
+
+label {
+    color: var(--tg-theme-hint-color);
+    font-size: 14px;
+} 

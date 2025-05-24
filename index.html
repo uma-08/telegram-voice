@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Recorder Mini App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎙️ Voice Recorder</h1>
+        
+        <div class="recording-section">
+            <button id="recordButton" class="record-button">
+                Start Recording
+            </button>
+            <div id="recordingStatus" class="recording-status"></div>
+        </div>
+
+        <div class="recordings-list" id="recordingsList">
+            <!-- Recordings will be added here dynamically -->
+        </div>
+
+        <div class="tag-selector">
+            <select id="tagSelect">
+                <option value="💖 Personal">💖 Personal</option>
+                <option value="❓ Question">❓ Question</option>
+                <option value="⚡ Priority">⚡ Priority</option>
+                <option value="😎 Chill">😎 Chill</option>
+            </select>
+        </div>
+
+        <div class="combine-section">
+            <button id="combineButton" class="combine-button" disabled>
+                Combine Selected
+            </button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
